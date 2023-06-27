@@ -1,0 +1,105 @@
+.modal__body{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+   
+}
+.modal__content{
+    width: 700px;
+    padding: 30px 40px;
+    border-radius: 20px;
+    background-color: var(--blue);;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.modal__content h1{
+    font-size: 45px;
+}
+.editForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.editForm input{
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%;
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    outline-color:  var(--yellow);
+}
+
+.editForm button{
+    width: 120px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    text-align: center;
+    margin: 0 auto;
+    color: #3f497f;
+    transition: transform 0.3s;
+}
+.editForm button:hover{
+    transform: scale(1.05);
+}
+.file_input {
+    width: 100%;
+    max-width: 100%;
+    color: #444;
+    padding: 6px !important;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid var(--blue);
+    transition: .3s;
+  }
+  
+ .file_input::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: var(--blue);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: var(--light);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+  }
+
+ .file_input::file-selector-button:hover {
+    background: var(--blue-hover);
+  }
+ .file_input::file-selector-button:active {
+    background: var(--blue-active);
+  }
+  @keyframes zoomIn {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+    } 
+  

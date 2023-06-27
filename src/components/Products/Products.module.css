@@ -1,0 +1,11 @@
+.products{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.opacity{
+    opacity: .2;
+    pointer-events: none;
+}

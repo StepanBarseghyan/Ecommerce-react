@@ -1,0 +1,166 @@
+header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.header__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--green);
+}
+.search{
+    display: flex;
+}
+.search input{
+    width: 500px;
+    border-radius: 7px 0 0 7px;
+    border: 1px solid #e5e2d4;
+    padding: 8px 0 8px 20px;
+    outline: 0;
+}
+.search button{
+    border: none;
+    background-color: var(--green);
+    color: var(--light);
+    width: 30px;
+    border-radius: 0 7px 7px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.search button:hover{
+    background-color: var(--green-hover)
+}
+.search button:active{
+    background-color: var(--green-active)
+}
+.user{
+    margin-right: 5px;
+}
+.themeBtn{
+    border: none;
+    outline: none;
+    width: 33px;
+    border-radius: 50%;
+    height: 33px;
+    cursor: pointer;
+    background-color: #e5e2d4;
+    transition: 0.3s;
+}
+.themeBtn svg{
+    color: var(--green);
+    font-size: 18px;
+    transition: 0.3s;
+}
+.shoppingCard{
+    text-decoration: none;
+    color: #539165;
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e5e2d4;
+    border-radius: 50%;
+    transition: 0.3s;
+    position: relative;
+}
+.shoppingCard span{
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    background-color: var(--yellow);
+    color: var(--light);
+    border-radius: 50%;
+    top: -18%;
+    right: -6px;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-weight: 500;
+}
+.shoppingCard:hover {
+    color: var(--green-hover)
+}
+.shoppingCard:active{
+   color: var(--green-active)
+}
+.themeBtn svg:hover{
+    color: var(--green-hover)
+}
+.themeBtn svg:active{
+    color:var(--green-active)
+}
+.user{
+    background: #e5e2d4;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.logOut{
+    position: absolute;
+    width: 150px;
+    background-color: #E5E2D4;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 10px 5px;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+    transition: .5s;
+    animation-name: opacity;
+    animation-duration:.5s
+}
+.logOut button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ce0c0c;
+    letter-spacing: 0.8px;
+    transition: .3s;
+}
+.logOut button:hover {
+    letter-spacing: 1.3px;
+}
+.logOut button svg{
+    margin-right: 7px;
+}
+.header__right{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.currentUser__img{
+    height: 32px;
+    width: 32px;
+    object-fit: contain;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity:1;
+        transform: translateY(0);
+    }
+  }

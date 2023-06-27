@@ -1,0 +1,108 @@
+.Shopping__card_section{
+    padding-top: 30px;
+    user-select: none;
+    background-color: #FDFBF1;
+    min-height: 100vh;
+}
+.title{
+    text-align: center;
+}
+.count{
+    text-align: center;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.flex{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.Shopping__card_section table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+.Shopping__card_section table th{
+    border-bottom: 1px solid rgba(0, 0, 0,0.2);
+    border-top: 1px solid rgba(0, 0, 0,0.2);
+    text-transform: capitalize;
+    padding: 10px 15px;
+}
+.Shopping__card_section table tbody tr{
+    border-bottom: 1px solid rgb(0 0 0 / 20%);
+    height: 120px;
+}
+.Shopping__card_section table td{
+    padding: 10px 15px;
+    min-width: 200px;
+}
+.product__img{
+    width: 100px;
+}
+.product__img img{
+    width: 100%;
+    height: auto;
+}
+.flex button{
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
+.del{
+    cursor: pointer;
+    width: 30px;
+    background-color: #c90707;
+    height: 30px;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    font-size: 14px;
+    transition: .3s;
+    border: none;
+}
+.del:hover{
+    background-color: #b10707;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    
+}
+.back{
+    color: var(--green);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1.1px;
+    transition: width .3s;
+    
+}
+.back svg{
+    width: 24px;
+    transition: width .3s;
+}
+.back:hover svg{
+    width: 28px;
+}
+.totalPrice{
+    text-align: right;
+    margin-right: 110px;
+}
+.totalPrice__title{
+    font-size: 14px;
+}
+.totalPrice__txt{
+    font-size: 22px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+.calcBtn{
+    color: var(--green);
+}

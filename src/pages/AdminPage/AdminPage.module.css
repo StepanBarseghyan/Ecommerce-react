@@ -1,0 +1,170 @@
+img{
+    width: 100px;
+    object-fit: cover;
+    height: auto;
+}
+.admin__title{
+    font-size: 45px;
+    color: var(--blue);
+}
+.goToShop{
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s;
+    position: relative;
+}
+.goToShop svg{
+    margin-left: 5px;
+}
+.goToShop::before{
+content: '';
+position: absolute;
+left: 0;
+bottom: -5px;
+width: 0;
+height: 2px;
+background-color: var(--blue);
+transition: 0.3s;
+}
+.goToShop:hover::before{
+    width: 100%;
+}
+.blocks{
+    background: var(--green);
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+    justify-content: center;
+    border-radius: 10px;
+}
+.block{
+    flex: 0 1 32%;
+    height: 180px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid rgb(239, 238, 238);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.block svg{
+    font-size: 45px;
+}
+
+.block .block__usersCount{
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--blue);
+}
+.block .block__title{
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--blue);
+
+}
+.users__icon{
+    color: var(--yellow);
+}
+.blockedUsers__icon{
+    color: rgb(178, 0, 0);
+}
+.question{
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--green);
+}
+.users__table{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    padding:  10px 30px 30px 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(239, 238, 238);
+}
+.users__table th{
+    /* display: flex; */
+    font-size: 14px;
+    color: rgb(123, 123, 123);
+    padding: 20px 0 30px 0;
+    cursor: pointer;
+    
+}
+
+.users__table th svg{
+    margin-left:  5px;
+    position: relative;
+    top: -2px;
+}
+.users__table td{
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(239, 238, 238);
+}
+.users__table td img{
+    height: 50px;
+    max-width: 70px;
+    object-fit: contain;
+}
+.table_btn{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: .3s;
+    background-color: var(--light);
+    border: 1px solid #e5e2d4;
+
+}
+.table_btn svg{
+    font-size: 16px;
+}
+.deleteBtn{
+color: #B20000;
+}
+.deleteBtn:hover{
+    color: #ce0c0c;
+    background-color: #f7efc9;
+}
+.deleteBtn:active{
+    color: #a01010
+}
+.editBtn{
+    color: var(--yellow);
+}
+.editBtn:hover{
+    color: #d8aa47;
+    background-color: #f7efc9;
+}
+.editBtn:active{
+    color: #c69938;
+}
+.blockBtn{
+    color: #333333;
+}
+.blockBtn:hover{
+    color: #4e4e4e;
+    background-color: #f7efc9;
+}
+.blockBtn:active{
+    color: #242323;
+    
+}
+.unBlockBtn{
+    color: var(--green);
+    
+}
+.unBlockBtn:hover{
+    color: #69ac7c;
+    background-color: #f7efc9;
+}
+.unBlockBtn:active{
+    color: #437c53;
+}
